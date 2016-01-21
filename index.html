@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NYC16</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.css" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/app.css">
+
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+function initialize() {
+  var myCenter=new google.maps.LatLng(-27.9200703,153.1639212);
+  var mapProp = {
+    center:myCenter,
+    zoom:11,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("map"), mapProp);
+
+  var marker=new google.maps.Marker({
+    position:myCenter,
+    animation:google.maps.Animation.BOUNCE
+  });
+
+  google.maps.event.addListener(marker,'click',function() {
+    map.setZoom(16);
+    map.setCenter(marker.getPosition());
+  });
+
+  marker.setMap(map);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+</head>
+<body>
+  <ul id="menu">
+  	<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+  	<li data-menuanchor="secondPage"><a href="#secondPage">When</a></li>
+  	<li data-menuanchor="3rdPage"><a href="#3rdPage">Where</a></li>
+  	<li data-menuanchor="4thpage"><a href="#4thpage">Register</a></li>
+    <li data-menuanchor="5thpage"><a href="#5thpage">Theme</a></li>
+    <li data-menuanchor="6thpage"><a href="#6thpage">Contact</a></li>
+  </ul>
+<div id="fullpage">
+  <div class="section img">
+    <image class="img-responsive" src="images/NYC16_1_1.jpg">
+  </div>
+  <div class="section white"><h2>WHEN</h2><h3 class="subtitle">Friday 22 to Monday 25 April 2016</h3></div>
+  <div class="section orange"><h2 class="">WHERE</h2><h3  class="subtitle">The picturesque Mount Tamborine in South East Queensland</h3>
+    <div id="map" ></div>
+
+    </div>
+  <div class="section white"> <h2 class="register"><a href="http://www.registrations.nationalyoungiescamp.com.au/" target="_blank">Register Now</a></h2></div>
+  <div class="section white">
+    <div class="slide">
+      <image class="img-responsive" src="images/NYC16_5_2.jpg">
+    </div>
+    <div class="slide">
+      <h2>WORSHIP</h2>
+      <p>Is it something that has to be obvious in my life? What role does it have in my relationship with God, and why? Is there a formula for me to stick too, and if so, what is it? What does the Word say about worship and how relevant is it to me today?</p>
+    </div>
+    <div class="slide">
+      <h2>Living</h2>
+      <p>My life is his creation. He is worthy to be praised. David describes God in Psalm 18 as a God who absolutely has his back. David poured a great deal of energy into his worship of God, and in spite of ongoing drama and conflict during his whole life, was inspired enough to write a good chunk of Psalms that we sing today.</p>
+    </div>
+    <div class="slide">
+      <h2>Praising</h2>
+      <p>Let everything that has breath, Praise The Lord! (Psalm 150) Why? Phillipians 4:8 lists the things we should meditate on. These things actually describe the very features of our God! (Among many others) Just, pure, lovely, of good report, worthy of praise.</p>
+    </div>
+    <div class="slide">
+      <h2>Being</h2>
+      <p>Being with each other, together with God. Ephesians 4 describes our God who is above us all, through us all and in us all. We are united by the Spirit in sync with each other and with God. We may have differences of opinion, interpretations, backgrounds, and interests, but when we worship together we are all on the same page. God Is Good!</p>
+    </div>
+  </div>
+  <div class="section white">
+<div class="padding-lg">
+      <form id="contactForm" >
+        <h2 class="subtitle orange">Contact Us</h2>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" class="form-control" rows="5" required></textarea>
+      </div>
+     <input type="text" class="form-control" id="galaxy" placeholder="Galaxy">
+      <button type="submit" id="submit" class="btn btn-lg btn-block orange-bg">Submit</button>
+    </form>
+      <div id="success">
+        <h2 class="orange">Messaged received!</h2>
+        <p class="gray-dark">Thanks for your enquiry. We'll get back to you soon.</p>
+        <p class="gray-dark">NYC Team</p>
+        <button id="returnHome" class="btn btn-success">Return to NYC Home</button>
+      </div>
+      <div id="failure">
+        <h2 class="orange">Whoops!</h2>
+        <p class="gray-dark">Sorry that did not work. Please try again.</p>
+        <p class="gray-dark">NYC Team</p>
+        <button id="tryagain" class="btn btn-warning">Back to Contact Us form</button>
+      </div>
+</div>
+  </div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.js" crossorigin="anonymous"></script>
+  <script src="scripts/app.js" ></script>
+
+</body>
+</html>
