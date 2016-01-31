@@ -57,6 +57,7 @@ body{
 h1{ font-size:7.594em; font-family: 'Open Sans', sans-serif;}
 h2{ font-size:5.063em; }
 h3{ font-size:3.375em; }
+h4{ font-size:2.25em; }
 
 p{ font-size:1.5em; margin:30px 70px; }
 
@@ -70,12 +71,35 @@ h3.subtitle{ font-size:2.25em }
   max-width: 100%;
   height: auto;
 }
+.col{
+  width:50%;
+  float:left;
+}
+
+.extraInfo{
+	text-align: left;
+}
+
+.extraInfo h4{
+	margin-left: 70px;
+}
+
+.mapSection{
+  margin:50px;
+}
+
+.mapAddress {
+    padding: 14px 0px;
+    margin: 0px;
+		width: 90%;
+    min-width: 500px;
+}
+
+
 #map {
     width: 90%;
+    min-width: 500px;
     height: 500px;
-    min-width: 800px;
-    padding: 25px;
-    margin: 20px auto;
 }
 .white{
   color:#fff;
@@ -89,6 +113,9 @@ h3.subtitle{ font-size:2.25em }
 }
 .gray-dark{
   color:#262626;
+}
+.gray-dark-bg{
+  background-color:#262626;
 }
 .white-bg{
   background-color:#fff;
@@ -795,6 +822,24 @@ input[type="button"].btn-block {
      display:none;
  }
 
+ .col{
+ 	width:100%;
+ 	float: none;
+ }
+ .where{
+	 display:none;
+ }
+ .gray-dark-bg{
+	 background-color: #fff;
+ }
+	.extraInfo p{
+		font-size:1.2em;
+	}
+
+.extraInfo h4{
+	padding-top:70px;
+}
+
 }
 
 @media only screen
@@ -826,6 +871,11 @@ input[type="button"].btn-block {
     font-size: 1.2em;
     line-height: 1.2;
   }
+
+	.col{
+	  width:100%;
+		float: none;
+	}
 
   #map {
       height: 400px;
