@@ -103,7 +103,7 @@ p{ font-size:18px; }
   .audiojs .play-pause { width: 50px; height: 85px;     border-right: 0px ;  background-size: 100% auto; }
 	.audiojs .play{    background-size: 150% auto; margin-top: 10px;}
 	.audiojs .pause{    background: url("../scripts/vendor/audiojs/player-graphics.gif") -2px -223px no-repeat; background-size: 150% auto; margin-top: 10px; }
-	.audiojs .loading{    background: url("../scripts/vendor/audiojs/player-graphics.gif") -2px -76 no-repeat; background-size: 150% auto; margin-top: 10px; }
+	.audiojs .loading{    background: url("../scripts/vendor/audiojs/player-graphics.gif") -2px -76px no-repeat; background-size: 150% auto; margin-top: 10px; }
 
   .audiojs p { width: 50px; height: 85px; }
   .audiojs .scrubber {
