@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   $('#fullpage').fullpage({
   				sectionsColor: ['#F5F7F4', '#E74723', '#FFF', '#E74723', '#2E2925', '#FFF'],
-  				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', 'lastPage'],
+  				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '6thpage', 'lastPage'],
   				menu: '#menu',
 
 

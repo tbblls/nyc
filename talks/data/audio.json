@@ -94,6 +94,52 @@
 		}, {
 			"name": "Brad Gibson",
 			"fileName": "NYC-2015-Day4-4-Talk-Brad-Gibson.mp3"
+		}, {
+	    "year" : "2016",
+			"talks": [{
+				"name": "Byron Carragher",
+				"fileName": "01 Byron Carragher - Intro.mp3"
+			},
+			{
+				"name": "Hamish Sinclair Ross",
+				"fileName": "02 Hamish Sinclair Ross - Finding your relationship with God.mp3"
+			},
+			{
+				"name": "Michael Cheong",
+				"fileName": "03 Michael Cheong - Golden Calves.mp3"
+			},
+			{
+				"name": "Tim Horne",
+				"fileName": "04 Tim Horne - What Are We Worshipping.mp3"
+			},
+			{
+				"name": "Jackson Cooper",
+				"fileName": "05 Jackson Cooper - What Is Your Worship Capable Of.mp3"
+			},
+			{
+				"name": "Paul Wright",
+				"fileName": "06 Paul Wright - Why the World Is As It Is Today.mp3"
+			},
+			{
+				"name": "Pr Peter Moore",
+				"fileName": "07 Pr Peter Moore - Delete History.mp3"
+			},
+			{
+				"name": "Conan Holmes",
+				"fileName": "08 Conan Holmes - Prioritising Our Worship.mp3"
+			},
+			{
+				"name": "Ben Lee",
+				"fileName": "09 Ben Lee - It's Your Baby.mp3"
+			},
+			{
+				"name": "Steve Gilbert",
+				"fileName": "10 Steve Gilbert - Summary.mp3"
+			},
+			{
+				"name": "Pr Peter Moore",
+				"fileName": "11 Pr Peter Moore - Origins of NYC.mp3"
+			}]
 		}]
 	}]
 }

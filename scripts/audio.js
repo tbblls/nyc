@@ -29,6 +29,7 @@ $(document).ready(function(){
   })
   .fail(function(error) {
     console.log( 'error', error );
+    $("#content").html("<h1>Sorry an error has occured while loading NYC talks. Please try again soon!</h1>");
   });
 
 });
