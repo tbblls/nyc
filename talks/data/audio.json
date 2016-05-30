@@ -94,7 +94,8 @@
 		}, {
 			"name": "Brad Gibson",
 			"fileName": "NYC-2015-Day4-4-Talk-Brad-Gibson.mp3"
-		}, {
+		}]},
+		{
 	    "year" : "2016",
 			"talks": [{
 				"name": "Byron Carragher",
@@ -130,7 +131,7 @@
 			},
 			{
 				"name": "Ben Lee",
-				"fileName": "09 Ben Lee - It's Your Baby.mp3"
+				"fileName": "09 Ben Lee - Its Your Baby.mp3"
 			},
 			{
 				"name": "Steve Gilbert",
@@ -140,6 +141,5 @@
 				"name": "Pr Peter Moore",
 				"fileName": "11 Pr Peter Moore - Origins of NYC.mp3"
 			}]
-		}]
 	}]
 }
