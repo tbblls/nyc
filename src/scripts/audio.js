@@ -1,14 +1,14 @@
 
 $(document).ready(function(){
 
-  $.getJSON('talks/data/audio.json')
+  $.getJSON('data/audio.json')
   .done(function( data ){
     console.log(data);
     var html = data.audio.reverse()
                          .map((audioGroup) => {
                             var talksHtml = audioGroup.talks.map((talk) => {
                               var name  = "<h3>"+talk.name+"</h3>";
-                              var audio = "<div class='row'><audio src='{source}' preload='none'/><div><a href='{link}'>download</a></div></div>";
+                              var audio = "<div class='row'><audio src='{source}' preload='none'/><div class='download'><a href='{link}'>download</a></div></div>";
                               var source = "../assets/audio/{year}/{fileName}"
                                             .replace("{year}", audioGroup.year)
                                             .replace("{fileName}", talk.fileName);
