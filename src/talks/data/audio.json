@@ -119,11 +119,17 @@
 			},
 			{
 				"name": "Paul Wright",
-				"fileName": "06 Paul Wright - Why the World Is As It Is Today.mp3"
+				"fileName": "06 Paul Wright - Why the World Is As It Is Today.mp3",
+				"resources": [
+					{"title": "Why the World Is As It Is Today" , "fileName":"06 Paul Wright - Why the World Is As It Is Today.pptx", "fileType":"pptx"}
+				]
 			},
 			{
 				"name": "Pr Peter Moore",
-				"fileName": "07 Pr Peter Moore - Delete History.mp3"
+				"fileName": "07 Pr Peter Moore - Delete History.mp3",
+				"resources": [
+					{"title": "Delete History" , "fileName":"07 Pr Peter Moore - Delete History.pdf", "fileType":"pdf"}
+				]
 			},
 			{
 				"name": "Conan Holmes",
@@ -140,6 +146,20 @@
 			{
 				"name": "Pr Peter Moore",
 				"fileName": "11 Pr Peter Moore - Origins of NYC.mp3"
+			},
+			{
+				"name": "Pr Peter Moore - Worship",
+				"fileName": "Pst Peter Moore - The Living Aspect of Worship.mp3",
+				"resources": [
+					{"title": "Living" , "fileName":"LIVING – NYC16.pdf", "fileType":"pdf"}
+				]
+			},
+			{
+				"name": "Dan Frost - Praising",
+				"fileName": "Praising Dan Frost.mp3",
+				"resources": [
+					{"title": "Praising" , "fileName":"Praising.pdf", "fileType":"pdf"}
+				]
 			}]
 	}]
 }
