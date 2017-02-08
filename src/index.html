@@ -1,135 +1,154 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>NYC16</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.css" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NYC16</title>
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
 
-<script
-src="http://maps.googleapis.com/maps/api/js">
-</script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,900" rel="stylesheet">
 
-<script>
-function initialize() {
-  var myCenter=new google.maps.LatLng(-27.9200703,153.1639212);
-  var mapProp = {
-    center:myCenter,
-    zoom:11,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("map"), mapProp);
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  var marker=new google.maps.Marker({
-    position:myCenter,
-    animation:google.maps.Animation.BOUNCE
-  });
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-  google.maps.event.addListener(marker,'click',function() {
-    map.setZoom(16);
-    map.setCenter(marker.getPosition());
-  });
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/app.css">
 
-  marker.setMap(map);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 
 </head>
 <body>
-  <ul id="menu">
-  	<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
-  	<li data-menuanchor="secondPage"><a href="#secondPage">When</a></li>
-  	<li data-menuanchor="3rdPage"><a href="#3rdPage">Where</a></li>
-    <li data-menuanchor="5thpage"><a href="#5thpage">Theme</a></li>
-    <li><a href="./talks">Talks</a></li>
-    <li data-menuanchor="6thpage"><a href="#6thpage">Contact</a></li>
+  <div class="container">
+    <div class="banner-background section">
+      <div class="title-group">
+        <div class="title">TIMOTHY,</div>
+        <div class="title">TITUS &</div>
+        <div class="giant-title blue-text">
+          ME
+        </div >
+        <div class="title">
+          NYC17
+        </div>
+      </div>
 
-  </ul>
-<div id="fullpage">
-  <div class="section img">
-    <image class="img-responsive" src="assets/images/NYC16_1_1.jpg">
-  </div>
-  <div class="section white"><h2>WHEN</h2><h3 class="subtitle">Friday 22nd April to Monday 25th April (Public Holiday) 2016</h3></div>
-  <div class="section orange">
-    <h2 class="">WHERE</h2>
-    <h3  class="subtitle where">The picturesque Mount Tamborine in South East Queensland</h3>
+    </div>
+    <div class="section blue-background">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="title-group">
+            <div class="title-larger">TRUTH</div>
+            <div class="title-larger">AND</div>
+            <div class="title-larger">PURPOSE</div>
+            <div class="title-larger">&mdash; THEN</div>
+            <div class="title-larger">AND</div>
+            <div class="title-larger">NOW</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-group">
+            <div class="info-section">
+              <h1>WHEN</h1>
 
-    <div class="mapSection">
-      <div class="col">
-        <div id="map">map</div>
-        <p class="mapAddress gray-dark-bg">Mount Tamborine Convention Centre 237 Beacon Rd North Tamborine QLD 4272</p>
-      </div>
-      <div class="col extraInfo">
-        <h4>Getting There</h4>
-        <p>
-    Brisbane is the best airport to travel to and from with access to a train stopping at Helensvale.
-        </p>
-        <p>
-          For details on transfers please contact our travel team <a href="mailto:team@nationalyoungiescamp.com.au">here.</a>
-        </p>
-      </div>
-    </div>
+                <p>21-24 APRIL 2017</p>
+                <p>FRI 8PM - MON 2PM</p>
 
-  </div>
-  <div class="section white">
-    <div class="slide">
-      <image class="img-responsive" src="assets/images/NYC16_5_2.jpg">
-    </div>
-    <div class="slide">
-      <h2>WORSHIP</h2>
-      <p>Is it something that has to be obvious in my life? What role does it have in my relationship with God, and why? Is there a formula for me to stick too, and if so, what is it? What does the Word say about worship and how relevant is it to me today?</p>
-    </div>
-    <div class="slide">
-      <h2>Living</h2>
-      <p>My life is his creation. He is worthy to be praised. David describes God in Psalm 18 as a God who absolutely has his back. David poured a great deal of energy into his worship of God, and in spite of ongoing drama and conflict during his whole life, was inspired enough to write a good chunk of Psalms that we sing today.</p>
-    </div>
-    <div class="slide">
-      <h2>Praising</h2>
-      <p>Let everything that has breath, Praise The Lord! (Psalm 150) Why? Phillipians 4:8 lists the things we should meditate on. These things actually describe the very features of our God! (Among many others) Just, pure, lovely, of good report, worthy of praise.</p>
-    </div>
-    <div class="slide">
-      <h2>Being</h2>
-      <p>Being with each other, together with God. Ephesians 4 describes our God who is above us all, through us all and in us all. We are united by the Spirit in sync with each other and with God. We may have differences of opinion, interpretations, backgrounds, and interests, but when we worship together we are all on the same page. God Is Good!</p>
-    </div>
-  </div>
-  <div class="section white">
-<div class="padding-lg">
-      <form id="contactForm" >
-        <h2 class="subtitle orange">Contact Us</h2>
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email address</label>
-        <input type="email" class="form-control" id="email" placeholder="Email" required>
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" class="form-control" rows="5" required></textarea>
-      </div>
-     <input type="text" class="form-control" id="galaxy" placeholder="Galaxy">
-      <button type="submit" id="submit" class="btn btn-lg btn-block orange-bg">Submit</button>
-    </form>
-      <div id="success">
-        <h2 class="orange">Messaged received!</h2>
-        <p class="gray-dark">Thanks for your enquiry. We'll get back to you soon.</p>
-        <p class="gray-dark">NYC Team</p>
-        <button id="returnHome" class="btn btn-success">Return to NYC Home</button>
-      </div>
-      <div id="failure">
-        <h2 class="orange">Whoops!</h2>
-        <p class="gray-dark">Sorry that did not work. Please try again.</p>
-        <p class="gray-dark">NYC Team</p>
-        <button id="tryagain" class="btn btn-warning">Back to Contact Us form</button>
-      </div>
-</div>
-  </div>
-</div>
+            </div>
+            <div class="info-section">
+              <h1>WHERE</h1>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.js" crossorigin="anonymous"></script>
-  <script src="scripts/app.bundle.js" ></script>
+                <p>CYC BURLEIGH</p>
+                <p>22-28 RUDD STREET</p>
+                <p>BURLEIGH HEADS</p>
+                <p>QLD 4220</p>
+
+            </div>
+            <div class="info-section">
+              <h1>COST</h1>
+              <p>
+                $250PP
+              </p>
+            </div>
+            <div class="info-section">
+              <button id="register" onclick="location.href='http://www.registrations.nationalyoungiescamp.com.au/';">Register</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="light-grey-background section">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="clip-text clip-text_one">
+            <div>
+              NYC
+            </div>
+            <div>
+              17
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-group">
+          <h2>JESUS IS COMING SOON. WE'RE CALLED OF GOD. WE'VE GOT A PURPOSE TO FULFIL.</h2>
+           <p>
+             Do it. We're part of something much bigger. Preaching the truth matters. Our example counts. We have God's power within. Stay focused. Play your part. Let grace be your teacher. We're young & living in the last days. Keep going. Never give up. Eternal life is yours. It's easy to forget the people in the Bible – like Timothy & Titus – were a lot like us. It's encouraging to remember. It builds confidence to be who God has called us to be now.
+           </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="grey-background section">
+      <div class="row">
+          <form class="form-horizontal" action="mailto:adamtibballs@gmail.com" enctype="text/plain" >
+          <fieldset>
+            <legend class="text-center">Contact us</legend>
+
+            <!-- Name input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="name">Name</label>
+              <div class="col-md-9">
+                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+              </div>
+            </div>
+
+            <!-- Email input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">Your E-mail</label>
+              <div class="col-md-9">
+                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+              </div>
+            </div>
+
+            <!-- Message body -->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Your message</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+              </div>
+            </div>
+
+            <!-- Form actions -->
+            <div class="form-group">
+              <div class="col-md-12 text-right">
+                <button type="submit">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
